@@ -6,7 +6,6 @@ import requests
 def find_books(context):
     context.response = requests.get(f"{API_URL}/api/v1/books")
 
-
 @then("the response should contain the following books:")
 def validate_list_of_books(context):
     expected_books = [row['name'] for row in context.table]
