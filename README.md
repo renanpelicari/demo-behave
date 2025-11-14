@@ -1,4 +1,4 @@
-# Demo Behave
+# Behame Framework Demo
 
 A simple demonstration of **Behavior-Driven Development (BDD)** in Python using the [Behave](https://behave.readthedocs.io/) framework.
 
@@ -13,7 +13,8 @@ A simple demonstration of **Behavior-Driven Development (BDD)** in Python using 
 
 ### Prerequisites
 - Python **3.12+**
-- [Docker](https://www.docker.com/) *(optional)*
+
+[//]: # (- [Docker]&#40;https://www.docker.com/&#41; *&#40;optional&#41;*)
 - Virtual environment *(recommended)*
 
 ### Create Virtual Environment
@@ -39,11 +40,15 @@ poetry install
 
 Start the app before running tests.
 
-#### Using Docker
-```bash
-docker build -t demo-behave-api .
-docker run -d -p 8000:8000 demo-behave-api
-```
+[//]: # (#### Using Docker)
+
+[//]: # (```bash)
+
+[//]: # (docker build -t demo-behave-api .)
+
+[//]: # (docker run -d -p 8000:8000 demo-behave-api)
+
+[//]: # (```)
 
 #### Using Poetry
 ```bash

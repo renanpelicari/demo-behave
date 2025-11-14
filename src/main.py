@@ -1,3 +1,6 @@
+from dotenv import load_dotenv
+import os
+
 import uvicorn
 
 from fastapi import FastAPI
@@ -19,8 +22,11 @@ app = FastAPI(
 app.include_router(movies_router.router)
 app.include_router(books_router.router)
 
+load_dotenv()
+
+host = os.getenv("HOST", "127.0.0.1")
+port = int(os.getenv("PORT", 8000))
+
 if __name__ == "__main__":
-    host = "127.0.0.1"
-    port = 8000
     print (f"Starting server at http://{host}:{port}/docs")
     uvicorn.run("main:app", host=host, port=port, reload=True)
