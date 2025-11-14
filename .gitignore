@@ -1,4 +1,4 @@
-.env
+#.env -> this file is used to be ignored on git, however this project is only for Demo purposes
 .venv
 .idea
 *__pycache__*
